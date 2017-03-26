@@ -10,6 +10,5 @@ app.config(($routeProvider)=> {
       controller: "classListCtrl",
       //use the partial "home"
       templateUrl : "partials/classList.html"
-      }
-    })
+      })
 });

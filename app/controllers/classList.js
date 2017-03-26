@@ -1,3 +1,3 @@
-app.controller('classList', function($scope){
+app.controller('classListCtrl', function($scope){
 
 })
