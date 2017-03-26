@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Class Website Boiler Plate</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container-fixed red">
+
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo left">NSS Logo</a>
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons searchBarLogo">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <h1>Cohort 17</h1>
+
+      <div class="middleContainer container grey darken-4">
+        <div class="studentList">
+          <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="http://i.imgur.com/ztCw44N.png">
+                  <span class="card-title">Student Name</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of student list -->
+        <div class="instructor list">
+          <h1>Instructors</h1>
+          <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="http://i.imgur.com/ztCw44N.png">
+                  <span class="card-title">Student Name</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="technologies">
+          <h1>Technologies!!</h1>
+          <i class="large material-icons">insert_chart</i>
+          <i class="large material-icons">insert_chart</i>
+          <i class="large material-icons">insert_chart</i>
+          <i class="large material-icons">insert_chart</i>
+          <i class="large material-icons">insert_chart</i>
+          <i class="large material-icons">insert_chart</i>
+        </div>
+
+        <div class="classPicture">
+          <img src="http://i.imgur.com/rutNqqK.jpg">
+        </div>
+
+      </div><!-- end of middleContainer -->
+
+
+        <!-- setup angular app -->
+      <main>
+        <div ng-app="classList">
+          <!-- setup ng-view -->
+          <div ng-view></div>
+
+        </div>
+      </main>
+    <!-- end of angular app -->
+
+
+
+    </div><!-- end of container div -->
+
+
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="app/controllers/classList.js"></script>
+  </body>
+</html>
